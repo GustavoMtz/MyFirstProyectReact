@@ -1,0 +1,28 @@
+import React, {useState, useEffect} from "react";
+
+
+
+
+const Contador = () => {
+
+    const [contador, setContador] = useState(0);
+
+
+    useEffect(()=>{
+
+
+
+    });
+
+    return 
+    <div>
+        <p>
+           {contador} Clicks
+        </p>
+        <button onClick={()=>{setContador(contador+1)}}> Aumentar </button>
+        <button onClick={()=>{setContador(contador-1)}}> Disminuir </button>
+        <button onClick={()=>{setContador(0)}}> Iniciar </button>
+    </div>
+}
+
+export default Contador
