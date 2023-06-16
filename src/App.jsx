@@ -1,18 +1,14 @@
 import React from "react";
-import Texto from "./components/Texto"
-import Contador from "./components/Contador";
-
+import Pokemones from "./components/Pokemones";
+import "./App.css"
 
 
 const App = ()=>{
-    return 
-    
-    <div>
-        <p> Ola k ase?</p>
-       <Texto name= "algo" apellido="perez" edad={36} />
-       <Contador/>
-    </div>
-    
+    return <div className="container">
+        {
+            <Pokemones/>
+        }
+    </div>  
 }
 
 export default App;

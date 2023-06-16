@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 
 
 
@@ -7,15 +7,7 @@ const Contador = () => {
 
     const [contador, setContador] = useState(0);
 
-
-    useEffect(()=>{
-
-
-
-    });
-
-    return 
-    <div>
+    return <div>
         <p>
            {contador} Clicks
         </p>
