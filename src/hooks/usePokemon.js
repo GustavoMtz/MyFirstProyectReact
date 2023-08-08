@@ -18,7 +18,7 @@ const usePokemon = (url)=>{
         })  
     }, [url])
 
-    return {pokemones, loading, anterior, siguiente}
+    return { pokemones, loading, anterior, siguiente }
 }
 
 export default usePokemon;
