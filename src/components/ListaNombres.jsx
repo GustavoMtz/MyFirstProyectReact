@@ -11,8 +11,6 @@ const ListaNombres= ()=>{
         setNombre("");  
     }
 
-
-
     return (
        <div>
             <p>Nombre</p>
