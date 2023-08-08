@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-
+//Revisar posible error, repetir ejercicio de ser necesario
 const usePokemon = (url)=>{
 
     const   [anterior, setAnterior] = useState(null);

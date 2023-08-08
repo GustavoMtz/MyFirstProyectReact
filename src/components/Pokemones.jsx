@@ -22,10 +22,7 @@ const Pokemones = ()=>{
         setLoading(false);
     })  
 }, [actual])
-
-
-
-    
+    //se regresa a su forma original para estabilizar el código
     return (  
         loading ? 
         <p>Cargando...</p>
@@ -41,12 +38,7 @@ const Pokemones = ()=>{
 
         </div>       
     )
-   /*
-   return (
-   <p> pokemon aqui</p>
    
-   
-   )*/
 
 }
 export default Pokemones;
