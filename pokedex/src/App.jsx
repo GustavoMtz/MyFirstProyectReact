@@ -40,8 +40,19 @@ function App() {
         <h1>Pokedex</h1>
 
         {
-            pokemones.map(pokemon => <p>{pokemon.name}</p>)
+            pokemones.map(pokemon => {
+              return (
+                <div>
+                  <img src={pokemon.img} alt={pokemon.name}></img>
+                  <p>{pokemon.name}</p>
+                  <span>{pokemon.id}</span>
+                </div>
 
+
+              )
+              
+              }
+              )
         }
       </div>
      
