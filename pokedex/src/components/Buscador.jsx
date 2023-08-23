@@ -5,14 +5,14 @@ function Buscador({ busqueda, setBusqueda, buscarPokemon }) {
   
   return (
     <>
-      <h3 className='titulo'>Mas de 800 pokemones, elige tu favorito</h3>
+      <h3 className='titulo'>Todas las generaciones disponibles</h3>
       <form className='container-buscar' onSubmit={buscarPokemon}>
-        <input type="text" placeholder='Encuentra tu pokemon' className='input-buscar'
+        <input type="text" placeholder='Busca tu pokemon' className='input-buscar'
           value={busqueda}
           onChange={(e) => setBusqueda(e.target.value)} />
         <button className='btn-buscar' type='submit'>
           <Buscar />
-          Buscar pokemon
+          Buscar
         </button>
       </form>
     </>
