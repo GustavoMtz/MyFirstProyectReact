@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import MemoHijo from './Memohijo';
 
 
 const Memorizacion = ()=>{
@@ -13,6 +14,9 @@ const Memorizacion = ()=>{
 
             <button onClick={()=>{setContador(contador+1)}}> + </button>
             <button onClick={()=>{setContador(contador-1)}}> - </button>
+
+
+            <MemoHijo/>
         </div>
     )
 }
