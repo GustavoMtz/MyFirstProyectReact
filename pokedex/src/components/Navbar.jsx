@@ -1,14 +1,16 @@
-import { Logo } from "./icons"
-import '../Navbar.css'
+import { Logo, Luna, Sol } from "./icons"
+import './Navbar.css'
 const Navbar = ()=>{
     return (
         <nav>
             <Logo/>
-            <div>
+            <div className="switch">
+                <Sol/>
                 <label>
-                    <input type="checkbox"/>
-                    <span></span>
+                    <input type="checkbox" className="check-switch" hidden/>
+                    <span className="slider"></span>
                 </label>
+                <Luna/>
             </div>
         </nav>
     )
