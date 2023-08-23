@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-const URL_DEFAULT='https://pokeapi.co/api/v2/pokemon?limit=10&offset=0'
+const URL_DEFAULT='https://pokeapi.co/api/v2/pokemon?limit=20&offset=0'
 
 function usePokemones(){
     const [pokemones, setPokemones]= useState([]);
@@ -10,7 +10,7 @@ function usePokemones(){
         const listapokemones = await response.json()
         const {next, results} = listapokemones
        
-        const newPokemones = Promise.all(
+        const newPokemones =await Promise.all(
             results.map(async(pokemon)=>{
           
                 const response = await fetch(pokemon.url)

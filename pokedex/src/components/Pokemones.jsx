@@ -18,16 +18,16 @@ function Pokemon ({id, name, img}){
 }
 
 function Pokemones (){
-    const {pokemones} = usePokemones();
+    const {pokemones, masPokemones} = usePokemones();
     return (
         <section className='pokemon-container'>
             {
                 pokemones.map(pokemon =>  
-                    <Pokemon {...pokemon} />
+                    <Pokemon {...pokemon} key={pokemon.id}/>
                     )
 
             }
-
+            <button className='btn-buscar' onClick={masPokemones}>Mostrar más</button>
         </section>
 
     )
