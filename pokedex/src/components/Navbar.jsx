@@ -1,7 +1,15 @@
+import { Logo } from "./icons"
+import '../Navbar.css'
 const Navbar = ()=>{
     return (
         <nav>
-            <h1>Nav</h1>
+            <Logo/>
+            <div>
+                <label>
+                    <input type="checkbox"/>
+                    <span></span>
+                </label>
+            </div>
         </nav>
     )
 
