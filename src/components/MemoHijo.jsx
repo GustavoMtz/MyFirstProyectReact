@@ -2,16 +2,14 @@ import {memo} from 'react'
 
 
 //impide que se vuelva a renderizar el componente hijo, queda en cache
-const MemoHijo = () =>{
-
+const MemoHijo = ({contador}) =>{
 
     console.log('Renderizando Hijo');
     return (
-
-        
-        <h1>Memo Hijo</h1>
-
-
+        <div>
+            <h1>Memo Hijo</h1>
+            <h3>{contador}</h3>
+        </div>        
     )
 
 }
