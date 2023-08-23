@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import Navbar from './components/Navbar';
+import Buscador from './components/Buscador';
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
     <>
     <Navbar/>
       <div className='App'>
+        <Buscador/>
         <h1>Pokedex</h1>
 
         {
