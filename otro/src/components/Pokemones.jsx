@@ -1,4 +1,4 @@
-import usePokemones from '../hooks/usePokemones'
+
 import { useEffect, useState } from 'react'
 
 const Pokemones = ()=>{
