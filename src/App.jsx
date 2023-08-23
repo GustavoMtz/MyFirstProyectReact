@@ -16,10 +16,3 @@ const App = ()=>{
 export default App;
 
 
- /*<hr/>
-            <Texto name="Juan" apellido="Contreras"/>
-            <hr/>
-            <Contador/>
-            <hr/>
-             <hr/>
-            <Referencia/>*/
