@@ -12,6 +12,8 @@ const Memorizacion = ()=>{
                 {contador} Clicks
             </p>
 
+
+
             <button onClick={()=>{setContador(contador+1)}}> + </button>
             <button onClick={()=>{setContador(contador-1)}}> - </button>
 

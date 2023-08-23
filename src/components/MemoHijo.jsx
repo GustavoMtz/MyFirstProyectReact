@@ -7,6 +7,8 @@ const MemoHijo = () =>{
 
     console.log('Renderizando Hijo');
     return (
+
+        
         <h1>Memo Hijo</h1>
 
 
